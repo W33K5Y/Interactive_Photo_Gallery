@@ -1,8 +1,16 @@
-#imageLightbox
-{
-    position: fixed;
-    z-index: 9999;
- 
-    -ms-touch-action: none;
-    touch-action: none;
+.lightbox-wrap {
+
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 
+	& a {
+	flex-basis: 25%;
 }
+}
+
+a {
+	flex-basis: 20%;
+	margin: 10px 0;
+}	

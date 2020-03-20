@@ -357,24 +357,32 @@ header {
   flex-direction: column;
 }
 
-main {
-  margin: 0 20px;
-  padding: 0 45px;
+.lightbox-wrap {
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 700px;
+  height: .lightbox-wrap a;
+  height-flex-basis: 25%;
 }
 
-div {
+a {
+  z-index: 1000;
   flex-basis: 25%;
 }
 
-#imageLightbox {
-  position: fixed;
-  z-index: 9999;
-  -ms-touch-action: none;
-  touch-action: none;
+.lightbox-wrap {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: .lightbox-wrap a;
+  height-flex-basis: 25%;
+}
+
+a {
+  flex-basis: 20%;
+  margin: 10px 0;
 }
 
 .searchBox {
