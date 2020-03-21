@@ -14,6 +14,11 @@ $('.lightbox-wrap').each(function() { // the containers for all your galleries
           enabled:true,
           preload: [0,2],
           closeBtnInside: false
-        }
-    });
+      }
+
+  });
 });
+
+$('div a img caption').hide();
+
+
