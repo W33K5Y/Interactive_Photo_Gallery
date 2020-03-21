@@ -367,20 +367,6 @@ header {
 }
 
 a {
-  z-index: 1000;
-  flex-basis: 25%;
-}
-
-.lightbox-wrap {
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height: .lightbox-wrap a;
-  height-flex-basis: 25%;
-}
-
-a {
   flex-basis: 20%;
   margin: 10px 0;
 }
