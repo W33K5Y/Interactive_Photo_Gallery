@@ -1,8 +1,0 @@
-@mixin mq($break){
-	$value:$break;
-	@if $value == $break {
-		@media (max-width: 768px) {
-			@content
-		}
-	}
-}

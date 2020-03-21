@@ -1,6 +1,14 @@
 h1 {
 	color: whitesmoke;
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: $font-prime;
 	letter-spacing: .3em;
+	text-shadow: 1px 1px 3px snow;
+}
+
+h1:after {
+	content:'•';
+	font-size: 2em;
+	color:snow;
+
 }

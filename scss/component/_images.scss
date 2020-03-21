@@ -4,13 +4,25 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	height: 
-	& a {
+
+&a {
 	flex-basis: 25%;
-}
+
+}	
 }
 
+img {
+	box-shadow: 1px 1px 10px black;
+}
 a {
-	flex-basis: 20%;
-	margin: 10px 0;
-}	
+	padding: 20px;
+}
+
+@media(min-width: 1238px) {
+.lightbox-wrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+}
+
