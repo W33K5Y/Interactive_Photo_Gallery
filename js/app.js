@@ -1,3 +1,4 @@
+
 $('.lightbox-wrap').magnificPopup({
   delegate: 'a', // child items selector, by clicking on it popup will open
   type: 'image'
@@ -6,20 +7,20 @@ $('.lightbox-wrap').magnificPopup({
 
 });
 
-// $('.lightbox-wrap').each(function() { // the containers for all your galleries
-//     $(this).magnificPopup({
-//         delegate: 'a', // the selector for gallery item
-//         type: 'image',
+$('.lightbox-wrap').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
 
     
-//         gallery: {
-//           enabled:true,
-//           preload: [0,2],
-//           closeBtnInside: false
-//       }
+        gallery: {
+          enabled:true,
+          preload: [0,2],
+          closeBtnInside: false
+      }
 
-//   });
-// });
+  });
+});
 
 $('.lightbox-wrap').click( function () {
   $(this). magnificPopup({
@@ -80,3 +81,18 @@ $('.lightbox-wrap').click( function () {
     type: 'image' // this is a default type
 });
 });
+
+let $search = $('.searchBox');
+let $imgs = $('img')
+
+$search.keyup(function(event) {
+  let value = $search.val().toLowerCase();
+  $imgs.show();
+  if (value !== '') {
+    $imgs.not('[title*="' + value + '"]').hide();
+  }
+});
+
+
+
+
