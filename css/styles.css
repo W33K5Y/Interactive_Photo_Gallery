@@ -366,6 +366,11 @@ header {
 }
 
 .lightbox-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lightbox-wrap {
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -383,12 +388,6 @@ a {
   padding: 20px;
 }
 
-@media (min-width: 1238px) {
-  .lightbox-wrap {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .searchBox {
   width: 250px;
   margin: 20px auto;
