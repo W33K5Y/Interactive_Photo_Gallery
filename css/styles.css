@@ -338,20 +338,6 @@ template {
   display: none;
 }
 
-h1 {
-  color: whitesmoke;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3em;
-  text-shadow: 1px 1px 3px snow;
-}
-
-h1:after {
-  content: "•";
-  font-size: 2em;
-  color: snow;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -363,11 +349,108 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .lightbox-wrap {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 606px) {
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  ul li {
+    padding: 0.4em 0;
+  }
+}
+ul a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.logo {
+  display: none;
+}
+
+ul a:hover {
+  color: #939393;
+}
+
+ul a:active {
+  color: aqua;
+}
+
+@media (min-width: 607px) {
+  ul {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 787px) {
+  h1:first-of-type {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .logo {
+    display: inherit;
+    font-size: 1em;
+    flex-grow: 2;
+  }
+
+  .logo:after {
+    content: "•";
+    font-size: 1em;
+    color: snow;
+  }
+
+  ul a {
+    font-size: 0.8em;
+  }
+}
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3em;
+  text-shadow: 1px 1px 3px snow;
+}
+
+h1:first-of-type:after {
+  content: "•";
+  font-size: 2em;
+  color: snow;
+}
+
+ul a {
+  color: snow;
 }
 
 .lightbox-wrap {
