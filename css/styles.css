@@ -358,6 +358,10 @@ header {
   margin: 0 auto;
 }
 
+ul a {
+  font-size: 0.95em;
+}
+
 @media (max-width: 606px) {
   nav {
     align-items: center;
@@ -445,7 +449,7 @@ h1 {
 
 h1:first-of-type:after {
   content: "•";
-  font-size: 2em;
+  font-size: 1.4em;
   color: snow;
 }
 

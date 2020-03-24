@@ -14,6 +14,9 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+ul a {
+	font-size: .95em;
+}
 @media(max-width: 606px) {
 	nav {
 		align-items: center;
