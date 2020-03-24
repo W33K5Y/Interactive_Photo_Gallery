@@ -11,6 +11,13 @@ $('.lightbox-wrap').magnificPopup({
     enabled: true,
     navigateByImgClick: true,
   },
+  zoom: {
+    enabled: true,
+    duration: 450,
+    easing: 'ease-in-out',
+
+  },
+
 });
 
 
